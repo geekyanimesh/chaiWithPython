@@ -46,4 +46,20 @@ greet("Animesh")
 cube = lambda x:x**3
 print(cube(3))
 
-# Q7. 
+# Q7. Multiple arguments
+
+def sumAll(*args):
+   return sum(args)
+
+print(sumAll(1,2))
+print(sumAll(1,2,3,4,5,6))
+
+# Q8. Recursive functions
+
+def fact(num):
+   if num==1 or num==0:
+      return 1
+   else:
+    return num*fact(num-1)
+ 
+print(fact(5))
